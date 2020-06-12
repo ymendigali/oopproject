@@ -9,10 +9,19 @@ import mainpackage.Search;
 import mainpackage.Change;
 import mainpackage.Delete;
 
+import java.util.*;
+import java.util.Arrays;
 import java.io.*;
 import java.net.*;
-import java.util.*;
 import java.nio.charset.Charset;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) throws IOException {
@@ -44,5 +53,14 @@ public class Main {
 			
 		}while(answer != exit);
 		System.out.println("Application terminating...");
+	}
+	public static void read_txt(){
+		File file1 = new File(System.getProperty("user.dir")+"/src/contacts.txt");// we get the file
+		BufferedReader reader1 = new BufferedReader(new FileReader(file1)); // we get reader for the file
+		OutputStreamWriter writer1 = new OutputStreamWriter(
+                new FileOutputStream(System.getProperty("user.dir")+"/src/contacts.txt", true), "UTF-8");
+		BufferedWriter writer = new BufferedWriter(writer1);//this is a way to get a writer for th specific file
+		Scanner input= new Scanner(System.in);
+	
 	}
 }
