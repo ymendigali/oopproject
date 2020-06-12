@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import mainpackage.Main;
+
 public class Delete {
 	public static void choose_field() throws FileNotFoundException, IOException {
 		Scanner input = new Scanner(System.in);
@@ -37,8 +39,9 @@ public class Delete {
 		f1 = input.nextLine();
 		System.out.println("Give Surname: ");
 		f2 = input.nextLine();
-		File file = new File(System.getProperty("user.dir")+"/src/contacts.txt");
-		BufferedReader reader = new BufferedReader(new FileReader(file));
+		
+		Main.read_txt();
+		
 		String currentLine;
 		boolean first = false;
 		String[] fields = new String[0];
@@ -108,8 +111,9 @@ public class Delete {
 				valid = false;
 			}
 		}while(valid == false);
-		File file = new File(System.getProperty("user.dir")+"/src/contacts.txt");
-		BufferedReader reader = new BufferedReader(new FileReader(file));
+		
+		Main.read_txt();
+		
 		String currentLine;
 		boolean first = false;
 		String[] fields = new String[0];
@@ -176,8 +180,9 @@ public class Delete {
 	}
 	
 	public static void contact_delete(String line)  throws IOException, FileNotFoundException{
-		File file1 = new File(System.getProperty("user.dir")+"/src/contacts.txt");
-		BufferedReader reader1 = new BufferedReader(new FileReader(file1));	
+		
+		Main.read_txt();
+		
 		String currentLine1;
 		boolean first = false;
 		String[] fields = new String[0];
