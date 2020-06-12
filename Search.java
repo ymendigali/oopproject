@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.Scanner;
 
+import mainpackage.Main;
+
 
 public class Search {
 	public static void choose_field() throws FileNotFoundException, IOException {
@@ -44,8 +46,9 @@ public class Search {
 		f1 = input.nextLine();
 		System.out.println("Give Surname: ");
 		f2 = input.nextLine();
-		File file = new File(System.getProperty("user.dir")+"/src/contacts.txt");
-		BufferedReader reader = new BufferedReader(new FileReader(file));
+		
+		Main.read_txt();
+		
 		String currentLine;
 		boolean first = false;
 		String[] fields = new String[0];
