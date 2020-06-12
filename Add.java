@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.Scanner;
 
+import mainpackage.Main;
+
 public class Add extends Main{
 	public static void add_contact() throws IOException, FileNotFoundException{
 		File file1 = new File(System.getProperty("user.dir")+"/src/contacts.txt");// we get the file
