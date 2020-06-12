@@ -1,10 +1,6 @@
 # A Java Project
 
-**This is a simple java project from my early days as a Computer Science student**
-
-_This programm was created for the second semester class Object-oriented Programming 
-and is one of a few such simple java programms neccessary to pass the class_
-
+_This programm was created for the third trimestr class Object-oriented Programming 
 
 > #### Description of project
 >
