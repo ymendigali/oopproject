@@ -14,10 +14,12 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.Scanner;
 
+import mainpackage.Main;
+
 public class Print extends Main{
 	public static void show_contacts() throws IOException, FileNotFoundException{
-		File file = new File(System.getProperty("user.dir")+"/src/contacts.txt");//we get the cantact file 
-		BufferedReader reader = new BufferedReader(new FileReader(file));
+		Main.read_txt();
+		
 		String currentLine;
 		boolean first = false;
 		String[] fields = new String[0];
