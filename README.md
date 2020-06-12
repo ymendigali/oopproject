@@ -20,8 +20,6 @@ _This programm was created for the third trimestr class Object-oriented Programm
 
 > #### About this project
 >
-> - The comments to make the code understandable, are within the archives
-> - This project uses BufferedReader instead of FileReader
+> - This project uses BufferedReader
 > - This program was written in Eclipse IDE
-> - This repository was created to show the variety of the work I did and experience I gained as a student
 >
